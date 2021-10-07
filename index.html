@@ -1,1 +1,129 @@
-"Hello World" 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I'm Jonas Palomo</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "3px 10px";
+  } else {
+    document.getElementById("navbar").style.padding = "15px 10px";
+  }
+}
+</script>
+<body>
+	<div id="intro-page">
+		<nav id="navbar">
+			<div id="navbar-left">
+				<!-- <h1>JONAS</h1> -->
+			</div>
+			<div id="navbar-right">
+				<a href="#intro-page">Home</a>
+				<a href="#triangle">My Works</a>
+				<a href="">Contact</a>
+			</div>
+		</nav>
+		<div class="intro-text">
+			<p>Hey, I'm</p>
+			<h1>Jonas</h1>
+			<h1><span>Palomo</span></h1>
+			<div class="intro-row">
+				<a href="#triangle">Explore My Portfolio</a>
+				<a href="about.html">About me >></a>
+			</div>
+			<!-- <img src="img/stem.jpg" width="500" height="600"> -->
+		</div>
+		<div id="intro-image">
+			<img src="img/jonas2.png">
+		</div>
+	</div>
+
+	<section id="triangle"></section>
+
+	<section class="title" id="portfolio-title">
+		<h1>My Works</h1>
+	</section>
+
+	<section id="portfolio">
+		<div class="portfolio-content" id="video-questboard">
+			<video width="750" preload="auto" controls muted>
+				<source src="img/Questboard.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div id="questboard-info">
+			<h1 class="title">Questboard</h1>
+			<p><strong>Questboard</strong> is a website that was developed using Python and Django framework. It utilizes postgreSQL database in order to store relevant information needed for the website. It is 
+			designed to be a task distributor used by teachers in order to disseminate tasks to their 
+			students. A teacher can create a Questboardfor a specific topic in the course,
+			and assign the number of stars needed to get full marks on the Questboard.
+			The teacher can then post quests in the Questboard where students can participate
+			and earn stars for the questboard.</p>
+		</div>
+		<div class="portfolio-content" id="video-bujo">
+			<video width="750" preload="auto" controls muted>
+				<source src="img/bujo.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div id="bujo-info">
+			<h1 class="title">Bullet Journal</h1>
+			<p><strong>Bullet Journal</strong> is a website that was developed using Python and Django framework. It utilizes
+			postgreSQL database in order to store relevant information needed for the website. The website allows users to customize their profiles, including: profile picture, nickname, and bio/description. Bujo is designed to be a personal journal where a user can schedule tasks or events in the weekly planner.</p>
+		</div>
+		<div id="m82-image" class="portfolio-content portfolio-image">
+			<img src="img/m82website.png">
+		</div>
+		<div id="m82-info">
+			<h1 class="title">Website proposal for gaming organization</h1>
+			<p>This is a website proposal for our non-official gaming organization. The organization is based on Facebook streaming for games that we love to play.</p>
+			<div class="portfolio-button">
+				<a href="m82/index.html" target=”_blank”>Check out the website</a>
+			</div>
+		</div>
+		<div id="data-story" class="portfolio-content portfolio-image">
+			<img src="img/data.jpg">
+		</div>
+		<div id="data-story-info">
+			<h1 class="title">COVID-19 Dashboard</h1>
+			<p>My coursemates and I worked on this dashboard project for our Data Visualization course. The intended audience of this dashboard is directed towards the general health sector and governments of each country in order to give useful recommendations that are grounded on data for the sake of the safety of their citizens. The dataset contains thousands of rows of data, which includes confirmed cases, recoveries and deaths. It also provided data on world vaccination progress, which we used to see the correlation between vaccination progress vs. GDP.</p>
+		</div>
+	</section>
+
+	<section id="skills" class="title">
+		<h1 id="skills-title">My Skills</h1>
+		<h5>What I know: Python, Django framework, HTML, CSS, Java, MySQL</h5>
+	</section>
+
+	<section id="skill">
+		<div class="skill-box">
+			<h1 class="title">Web Design & Dev</h1>
+			<p>Content is essential, but delivery is key. I have experience in web design based on my college courses and self-learning. I have experience in web development to create functional websites seen in My Works. I'm in the process of learning responsiveness using CSS Grid and Flexbox.</p>
+		</div>
+		<div class="skill-box">
+			<h1 class="title">Data Cleaning & Organization</h1>
+			<p>I have experience cleaning large datasets using flight reports and COVID-19 world cases using Tableau and Excel software.</p>
+		</div>
+		<div class="skill-box">
+			<h1 class="title">Data Visualization</h1>
+			<p>I'm able to design and create data dashboards and data stories in order to present key pieces of information in the dataset and puts the numbers into context. I think of it as trying to help the intended audience connect with the data.</p>
+		</div>		
+		<div class="skill-box">
+			<h1 class="title">Team Collaboration</h1>
+			<p>Currently, I'm in the process of my educational experiences of team collaboration. I want to continue to being active, social, and engaging in order to develop my communication and leadership skills.</p>
+		</div>
+	</section>
+
+	<footer>
+		<h1>Contact Me</h1>
+		<p><i style="font-size:24px" class="fa">&#xf0e0;</i> jonas.palomo@obf.ateneo.edu</p>
+		<p><i style="font-size:24px" class="fa">&#xf095;</i> (+63): 0927-472-6791</p>
+	</footer>
+</body>
+</html>
+ 

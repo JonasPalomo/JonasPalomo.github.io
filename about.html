@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script>
+	mybutton = document.getElementById("myBtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	    mybutton.style.display = "block";
+	  } else {
+	    mybutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0; // For Safari
+	  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+</script>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Back to<br>Top</button>
+	<section class="intro-about">
+		<div class="container">
+			<img src="img/about.jpg">
+			<div class="about-text">
+				<h1 class="title">About me</h1>
+				<h2 class="title">Programmer. Developer.  Gamer.</h2>
+				<p>Hey! I'm Jonas and I'm currently studying BS Computer Science in Ateneo De Manila University. Due to the pandemic, I haven't been able to become socially active in my orgs in a while because of the adjustment period. But I'm pulling myself right back up and I'm willing to learn as much as I can.</p>
+				<div class="about-button">
+					<a href="index.html">Return to my Portfolio</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="education-about">
+		<div class="info-title title"><strong>My Education</strong></div>
+		<img src="img/admu.jpg" class="school-image">	
+		<div class="info-text">
+			<h1 class="title">Ateneo De Manila University</h1>
+			<h3 class="title">Studying BS Computer Science, Specialization in Data Science & Analytics, graduating in 2024 (?)</h3>
+			<p>My college life in Ateneo has already been a memorable one, even though I was only able  to experience campus life in my first year (thanks Covid). Coming into a new school setting, I was fairly nervous since I enrolled in this course with little to no background of programming. Naturally, I would struggle with syntax and complicated problems, but eventually I was able to condition myself in order to, at least, reach the level of my blockmates who we're already skilled in programming. I'll admit that my first-year college experience was tough and challenging, and it's probably not something I want to reminisce often, but those past experiences are what enabled me to overcome current challenges, may it be my academic or personal life.</p>
+		</div>
+		<img src="img/sbu.jpg" class="school-image">	
+		<div class="info-text">
+			<h1 class="title">San Beda University</h1>
+			<h3 class="title">Junior & Senior High School, June 2013 - March 2019</h3>
+			<p>I've spent nearly six years in this school, and a lot of career changes had happened during this period. This was where I met different people who taught me humor, good habits, bad habits, study techniques, real-life skills, valuing realtionships, and create fun memories. In the early years, I originally wanted to be a doctor of some sort, but then decided against it because I had developed a mild fear of blood. Around the middle of my stay in SBU, I began to consider pursuing Civil Engineering or Architechture. That was the time where I took interest in the construction of buildings and houses. Since I was in a pre-STEM section, our curriculum consisted of drafting classes where we would be graphing shapes and houses, and would eventually construct a scale model of a proposed school building design. However, I ended up realizing that I was only forcing myself to take an interest in those courses because I felt pressured of having to choose one. I was fortunate enough to have an extra two years in senior high school to think about what I really wanted, and finally decided to take a computer-related course. A huge influence on my choice would be my cousin after introducing me to the field. Overall, high school for me was a very long rollercaster ride, which if I could ride again, I would. </p>
+		</div>
+	</section>
+
+	<section class="hobby-section">
+		<div class="hobby-text">
+			<strong class="hobby-title title info-title">My hobbies</strong>
+			<p>These are mainly the activities that I do in my pastime</p>
+		</div>
+
+		<div class="hobbies">
+			<figure class="column">
+				<img src="img/cooking.jpg">
+				<h1>Cooking</h1>
+				<p>What makes cooking an enjoyable hobby for me is when the food I prepared tastes delicious. 
+				My first attempts at cooking were basic meals such as some variations of <em>sinigang</em> and mixed vegetables.</p>
+			</figure>
+			<figure class="column">
+				<img src="img/gaming.jpg">
+				<h1>Gaming</h1>
+				<p>I developed a passion for gaming because it was a way to escape reality and enter a new
+				universe within the video game. I enjoy the challenge of beating a difficult game.</p>
+			</figure>
+			<figure class="column">
+				<img src="img/boxing.jpg">
+				<h1>Boxing</h1>
+				<p>Boxing gives me a full-body workout and a certain degree of confidence. This sport
+				also allows me to relieve my stress and control my mental health.</p>
+			</figure>
+		</div>
+	</section>
+</body>
+</html>
