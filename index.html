@@ -16,6 +16,12 @@ function scrollFunction() {
   } else {
     document.getElementById("navbar").style.padding = "15px 10px";
   }
+</script>
+<script>
+window.onload = function () {
+	var element = document.getElementById('video');
+	element.muted = "muted";
+	}
 }
 </script>
 <body>
@@ -67,7 +73,7 @@ function scrollFunction() {
 			and earn stars for the questboard.</p>
 		</div>
 		<div class="portfolio-content" id="video-bujo">
-			<video width="750" preload="auto" controls muted>
+			<video id="video" width="750" preload="auto" controls>
 				<source src="img/bujo.mp4" type="video/mp4">
 			</video>
 		</div>
