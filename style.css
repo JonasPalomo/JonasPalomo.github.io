@@ -265,9 +265,20 @@ mark {
 }
 
 .socials {
+	/* display: flex; */
+	text-align: center;
+	padding: 10px;
+	/* margin-left: 11rem; */
+}
+
+.socials li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	/* padding: 5px; */
+}
+
+.socials p {
 	padding: 10px;
 }
 
