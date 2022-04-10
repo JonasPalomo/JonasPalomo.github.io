@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style-about.css">
 </head>
 <script>
 	mybutton = document.getElementById("myBtn");
@@ -10,7 +10,7 @@
 	// When the user scrolls down 20px from the top of the document, show the button
 	window.onscroll = function() {scrollFunction()};
 
-	function scrollFunction() {
+	function scrollFunction() {	
 	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 	    mybutton.style.display = "block";
 	  } else {
@@ -26,27 +26,27 @@
 </script>
 <body>
 	<button onclick="topFunction()" id="myBtn" title="Go to top">Back to<br>Top</button>
-	<section class="intro-about">
+	<div class="intro-about">
 		<div class="container">
 			<img src="img/about.jpg">
 			<div class="about-text">
 				<h1 class="title">About me</h1>
 				<h2 class="title">Programmer. Developer.  Gamer.</h2>
-				<p>Hey! I'm Jonas and I'm currently studying BS Computer Science in Ateneo De Manila University. Due to the pandemic, I haven't been able to become socially active in my orgs in a while because of the adjustment period. But I'm pulling myself right back up and I'm willing to learn as much as I can.</p>
-				<div class="about-button">
+				<p>Hey! I'm Jonas and I'm currently studying BSMS Computer Science with Specialization in Data Science & Analytics in Ateneo De Manila University. Due to the pandemic, I haven't been able to become socially active in my orgs in a while because of the adjustment period. But I'm pulling myself right back up and I'm willing to learn as much as I can.</p>
+				<div class="about-button"> 
 					<a href="index.html">Return to my Portfolio</a>
 				</div>
 			</div>
 
 		</div>
-	</section>
+	</div>
 	<section class="education-about">
-		<div class="info-title title"><strong>My Education</strong></div>
+		<div class="info-title title">My Education</div>
 		<img src="img/admu.jpg" class="school-image">	
 		<div class="info-text">
 			<h1 class="title">Ateneo De Manila University</h1>
-			<h3 class="title">Studying BS Computer Science, Specialization in Data Science & Analytics, graduating in 2024 (?)</h3>
-			<p>My college life in Ateneo has already been a memorable one, even though I was only able  to experience campus life in my first year (thanks Covid). Coming into a new school setting, I was fairly nervous since I enrolled in this course with little to no background of programming. Naturally, I would struggle with syntax and complicated problems, but eventually I was able to condition myself in order to, at least, reach the level of my blockmates who we're already skilled in programming. I'll admit that my first-year college experience was tough and challenging, and it's probably not something I want to reminisce often, but those past experiences are what enabled me to overcome current challenges, may it be my academic or personal life.</p>
+			<h3 class="title">Studying BS Computer Science, Specialization in Data Science & Analytics, graduating in 2024</h3>
+			<p>My college life in Ateneo has already been a memorable one, even though I was only able  to experience campus life in my first year. Coming into a new school setting, I was fairly nervous since I enrolled in this course with little to no background of programming. Naturally, I would struggle with syntax and complicated problems, but eventually I was able to condition myself in order to, at least, reach the level of my blockmates who we're already skilled in programming. I'll admit that my first-year college experience was tough and challenging, and it's probably not something I want to reminisce often, but those past experiences are what enabled me to overcome current challenges, may it be my academic or personal life.</p>
 		</div>
 		<img src="img/sbu.jpg" class="school-image">	
 		<div class="info-text">

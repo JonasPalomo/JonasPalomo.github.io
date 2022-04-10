@@ -1,135 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>I'm Jonas Palomo</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<script>
-window.onscroll = function() {scrollFunction()};
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "3px 10px";
-  } else {
-    document.getElementById("navbar").style.padding = "15px 10px";
-  }
-</script>
-<script>
-window.onload = function () {
-	var element = document.getElementById('video');
-	element.muted = "muted";
-	}
-}
-</script>
+	<title>Jonas Palomo</title>
+</head>
 <body>
-	<div id="intro-page">
-		<nav id="navbar">
-			<div id="navbar-left">
-				<!-- <h1>JONAS</h1> -->
+	<div class="container">
+		<header class="header">
+			<nav class="nav-bar">
+				<a href="#home-page" class="nav-text">Home</a>
+				<a href="#portfolio" class="nav-text">My Works</a>
+				<a href="#footer" class="nav-text">Contact Me</a>
+			</nav>
+		</header>
+	
+		<div class="home-page" id="home-page">
+			<div class="home-text">
+				<p id="hey">Hey, I'm</p>
+				<p id="name">Jonas</p>
+				<p id="name">Palomo</p>
+				<a href="about.html" id="about-button">Learn more about me</a>
 			</div>
-			<div id="navbar-right">
-				<a href="#intro-page">Home</a>
-				<a href="#triangle">My Works</a>
-				<a href="#contact">Contact</a>
-			</div>
-		</nav>
-		<div class="intro-text">
-			<p>Hey, I'm</p>
-			<h1>Jonas</h1>
-			<h1><span>Palomo</span></h1>
-			<div class="intro-row">
-				<a href="#triangle">Explore My Portfolio</a>
-				<a href="about.html">About me >></a>
-			</div>
-			<!-- <img src="img/stem.jpg" width="500" height="600"> -->
-		</div>
-		<div id="intro-image">
-			<img src="img/jonas2.png">
 		</div>
 	</div>
+	<div id="intro">
+		<p class="intro-title">My Introduction</p>
+		<p class="intro-text">Hello! My name is Jonas Palomo and I am currently majoring in <mark>BSMS Computer Science
+			with Specialization in Data Science & Analytics</mark> at Ateneo de Manila University. Thank you for taking a look
+			on my personal website. I am currently <mark>seeking for an internship</mark> that is in line with my interests, 
+			such as <mark>a role in data science or software engineering</mark>. This website serves as my official portfolio to showcase my past projects in order to present a measure of 
+			my skills and capabilities.<br>I hope that you gain insights on what I am able to do!
+		</p>
+		<a href="JonasPalomo-Resume.pdf" id="download-resume" target="_blank" download>Download Resume</a>
+	</div>
 
-	<section id="triangle"></section>
+	<div id="portfolio">
+		<h1 id="portfolio-title">My Works</h1>
 
-	<section class="title" id="portfolio-title">
-		<h1>My Works</h1>
-	</section>
+		<div class="portfolio-content" id="video-bujo">
+			<video id="video" width="800" preload="auto" controls>
+				<source src="img/bujo.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="content-info" id="bujo-info">
+			<h1 class="title">Bullet Journal</h1>
+			<p><strong>Bullet Journal</strong> is a website that was <mark>developed using Python and Django framework</mark>. It utilizes
+			<mark>postgreSQL database</mark> in order to store relevant information needed for the website. The website allows users to customize their profiles, including: profile picture, nickname, and bio/description. Bujo is designed to be a personal journal where a user can schedule tasks or events in the weekly planner.</p>
+		</div>
 
-	<section id="portfolio">
 		<div class="portfolio-content" id="video-questboard">
-			<video width="750" preload="auto" controls muted>
+			<video width="800" preload="auto" controls muted>
 				<source src="img/Questboard.mp4" type="video/mp4">
 			</video>
 		</div>
-		<div id="questboard-info">
+		<div class="content-info" id="questboard-info">
 			<h1 class="title">Questboard</h1>
-			<p><strong>Questboard</strong> is a website that was developed using Python and Django framework. It utilizes postgreSQL database in order to store relevant information needed for the website. It is 
+			<p><strong>Questboard</strong> is a website that was <mark>developed using Python and Django framework</mark>. It utilizes <mark>postgreSQL database</mark> in order to store relevant information needed for the website. It is 
 			designed to be a task distributor used by teachers in order to disseminate tasks to their 
 			students. A teacher can create a Questboardfor a specific topic in the course,
 			and assign the number of stars needed to get full marks on the Questboard.
 			The teacher can then post quests in the Questboard where students can participate
 			and earn stars for the questboard.</p>
 		</div>
-		<div class="portfolio-content" id="video-bujo">
-			<video id="video" width="750" preload="auto" controls>
-				<source src="img/bujo.mp4" type="video/mp4">
-			</video>
-		</div>
-		<div id="bujo-info">
-			<h1 class="title">Bullet Journal</h1>
-			<p><strong>Bullet Journal</strong> is a website that was developed using Python and Django framework. It utilizes
-			postgreSQL database in order to store relevant information needed for the website. The website allows users to customize their profiles, including: profile picture, nickname, and bio/description. Bujo is designed to be a personal journal where a user can schedule tasks or events in the weekly planner.</p>
-		</div>
+
 		<div id="m82-image" class="portfolio-content portfolio-image">
 			<img src="img/m82website.PNG">
 		</div>
-		<div id="m82-info">
+		<div class="content-info" id="m82-info">
 			<h1 class="title">Website proposal for gaming organization</h1>
 			<p>This is a website proposal for our non-official gaming organization. The organization is based on Facebook streaming for games that we love to play.</p>
+			<br>
 			<div class="portfolio-button">
 				<a href="m82/index.html" target=”_blank”>Check out the website</a>
 			</div>
 		</div>
+		
 		<div id="data-story" class="portfolio-content portfolio-image">
 			<img src="img/data.jpg">
 		</div>
-		<div id="data-story-info">
+		<div class="content-info" id="data-story-info">
 			<h1 class="title">COVID-19 Dashboard</h1>
-			<p>My coursemates and I worked on this dashboard project for our Data Visualization course. The intended audience of this dashboard is directed towards the general health sector and governments of each country in order to give useful recommendations that are grounded on data for the sake of the safety of their citizens. The dataset contains thousands of rows of data, which includes confirmed cases, recoveries and deaths. It also provided data on world vaccination progress, which we used to see the correlation between vaccination progress vs. GDP.</p>
+			<p><mark>Using Tableau Desktop and Tableau Prep</mark>, I
+				created a dashboard that explains the current
+				progress of world vaccination and COVID-19
+				updates of each country. It includes interactive
+				graphs and charts that a user can adjust to see the numbers
+				change with respect to the month and year. <mark>The dataset contains hundreds of thousands of rows of data</mark>, which includes confirmed cases, recoveries and deaths.
+				The intended audience of this dashboard is directed towards the general health sector and governments of each country in order to give useful recommendations that are grounded on data
+				</p>
 		</div>
-	</section>
 
-	<section id="skills" class="title">
-		<h1 id="skills-title">My Skills</h1>
-		<h5>What I know: Python, Django framework, HTML, CSS, Java, MySQL</h5>
-	</section>
+		<div id="Data Extraction and Cleaning" class="portfolio-content portfolio-image">
+			<img src="img/data-extract.PNG">
+		</div>
+		<div class="content-info" id="data-story-info">
+			<h1 class="title">Data Mining, Extraction, and Cleaning</h1>
+			<p>I extracted data from Twitter using <mark>Tweepy</mark> library and <mark>Twitter API</mark> in Python. After extracting thousands of tweets, 
+				I proceeded to perform numerous data cleaning techniques such as removing stopwords and punctuations,
+				applying lemmatization, removing hashtags and unnecesary spaces. This was pre-processing step before applying
+				NLP techniques in order to analyze the data.
+			</p>
+		</div>
 
-	<section id="skill">
-		<div class="skill-box">
-			<h1 class="title">Web Design & Dev</h1>
-			<p>Content is essential, but delivery is key. I have experience in web design based on my college courses and self-learning. I have experience in web development to create functional websites seen in My Works. I'm in the process of learning responsiveness using CSS Grid and Flexbox.</p>
+		<div id="nlp" class="portfolio-content portfolio-image">
+			<img src="img/NLP.PNG">
 		</div>
-		<div class="skill-box">
-			<h1 class="title">Data Cleaning & Organization</h1>
-			<p>I have experience cleaning large datasets using flight reports and COVID-19 world cases using Tableau and Excel software.</p>
+		<div class="content-info" id="data-story-info">
+			<h1 class="title">Using NLP techniques on Philippine Political Twitter Discussions</h1>
+			<p>
+				Using tweets extracted from <mark>Twitter API</mark> that have been pre-processed, I analyzed the data using numerous
+				natural language processing techniques such as <mark>sentiment analysis</mark> and <mark>topic modelling</mark>.
+			</p>
+			<br>
+			<a href="leni-data.pdf" target="_blank">View the full notebook here.</a>
 		</div>
-		<div class="skill-box">
-			<h1 class="title">Data Visualization</h1>
-			<p>I'm able to design and create data dashboards and data stories in order to present key pieces of information in the dataset and puts the numbers into context. I think of it as trying to help the intended audience connect with the data.</p>
-		</div>		
-		<div class="skill-box">
-			<h1 class="title">Team Collaboration</h1>
-			<p>Currently, I'm in the process of my educational experiences of team collaboration. I want to continue to being active, social, and engaging in order to develop my communication and leadership skills.</p>
+		
+		<div class="portfolio-content" id="video-data-model">
+			<video width="800" preload="auto" controls muted>
+				<source src="img/data-model.mp4" type="video/mp4">
+			</video>
 		</div>
-	</section>
+		<div class="content-info" id="data-model-info">
+			<h1 class="title">Simulation of COVID-19 w/ Vaccine Rollout</h1>
+			<p>
+				I created this simulation modelled after the SIVR model using <mark>Python</mark>. I also used Python libraries such as
+				<mark>NumPy and pandas</mark> for data manipulation, <mark>Matplotlib</mark> for data visualization, and <mark>AgentPy framework</mark> to create the
+				data model and simulation itself. The model simulates the behavior of a population being infected by COVID-19
+				and the effect of a vaccine rollout after a specific time-step.
+			</p>
+		</div>
 
-	<footer id="contact">
-		<h1>Contact Me</h1>
-		<p><i style="font-size:24px" class="fa">&#xf0e0;</i> jonas.palomo@obf.ateneo.edu</p>
-		<p><i style="font-size:24px" class="fa">&#xf095;</i> (+63): 0927-472-6791</p>
-	</footer>
+		<div id="blue-mark" class="portfolio-content portfolio-image">
+			<img src="">
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="footer-content">
+			<div class="col">
+				<h1 class="developed-by">Designed and developed by <mark>Jonas Palomo</mark></h1>
+				<p>Thanks for stopping by and I hope to hear from you soon!</p>
+			</div>
+			<div class="col">
+				<h1 class="reach-out">Reach out to me.</h1>
+				<h3>You can contact me through these platforms.</h3>
+				<ul class="socials">
+					<li>
+						<a href="#"><i class="uil uil-envelope"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="uil uil-linkedin"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="uil uil-phone"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
 </body>
+
+<script>
+	let navbar = document.querySelector('.header');
+	window.onscroll = () => {
+		if (window.scrollY > 300) {
+			navbar.classList.add('nav-active');
+		} else {
+			navbar.classList.remove('nav-active');
+		}
+	};
+</script>
+
+<script type="text/javascript">
+	(function (window, document) {
+		const markers = document.querySelectorAll('mark');
+		const observer = new IntersectionObserver(entries => {
+		  entries.forEach((entry) => {
+			if (entry.intersectionRatio > 0) {
+			  entry.target.style.animationPlayState = 'running';
+			  observer.unobserve(entry.target);
+			}
+		  });
+		}, {
+		  threshold: 0.8
+		});
+		
+		markers.forEach(mark => {
+		  observer.observe(mark);
+		});
+	  })(window, document);
+	
+  </script>
 </html>
- 
