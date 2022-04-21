@@ -5,10 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
 	<title>Portfolio Website of Jonas Palomo</title>
 </head>
 <body>
+	<div class="splash">
+		<div class="splash-text">
+			<h1 class="hide">
+				<span class="text">Hello.</span>
+			</h1>
+			<h1 class="hide">
+				<span class="text">Welcome to my</span>
+			</h1>
+			<h1 class="hide">
+				<span class="text">portfolio website.</span>
+			</h1>
+		</div>
+	</div>
+	<div class="slider"></div>
+
+
 	<div class="container">
 		<header class="header">
 			<nav class="nav-bar">
@@ -32,10 +49,12 @@
 		<p class="intro-text">Hello! My name is Jonas Palomo and I am currently majoring in <mark>BSMS Computer Science
 			with Specialization in Data Science & Analytics</mark> at Ateneo de Manila University. Thank you for taking a look
 			on my personal website. I am currently <mark>seeking for an internship</mark> that is in line with my interests, 
-			such as <mark>a role in data science or software engineering</mark>. This website serves as my official portfolio to showcase my past projects in order to present a measure of 
+			such as <mark>a role in data science, web development, software development, or software engineering</mark>. 
+			This website serves as my official portfolio to showcase my past projects in order to present a measure of 
 			my skills and capabilities.<br>I hope that you gain insights on what I am able to do!
 		</p>
 		<a href="JonasPalomo-Resume.pdf" id="download-resume" target="_blank" download>Download Resume</a>
+		<h1 style="margin-top: 70px; font-size: 60px;">Check out my works below!</h1>
 	</div>
 
 	<div id="portfolio">
@@ -116,7 +135,7 @@
 				natural language processing techniques such as <mark>sentiment analysis</mark> and <mark>topic modelling</mark>.
 			</p>
 			<br>
-			<a href="leni-data.pdf" target="_blank">View the full notebook here.</a>
+			<a href="leni_data.pdf" target="_blank">View the full notebook here.</a>
 		</div>
 		
 		<div class="portfolio-content" id="video-data-model">
@@ -163,38 +182,6 @@
 			</div>
 		</div>
 	</div>
-
+	<script src="app.js"></script>
 </body>
-
-<script>
-	let navbar = document.querySelector('.header');
-	window.onscroll = () => {
-		if (window.scrollY > 300) {
-			navbar.classList.add('nav-active');
-		} else {
-			navbar.classList.remove('nav-active');
-		}
-	};
-</script>
-
-<script type="text/javascript">
-	(function (window, document) {
-		const markers = document.querySelectorAll('mark');
-		const observer = new IntersectionObserver(entries => {
-		  entries.forEach((entry) => {
-			if (entry.intersectionRatio > 0) {
-			  entry.target.style.animationPlayState = 'running';
-			  observer.unobserve(entry.target);
-			}
-		  });
-		}, {
-		  threshold: 0.8
-		});
-		
-		markers.forEach(mark => {
-		  observer.observe(mark);
-		});
-	  })(window, document);
-	
-  </script>
 </html>
