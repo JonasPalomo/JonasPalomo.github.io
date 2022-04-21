@@ -45,7 +45,7 @@ function enableScroll() {
 
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-tl.to(".text", { y: "0%", duration: 1, stagger: 0.25, delay: 0.3 });
+tl.to(".text", { y: "0%", duration: 1, stagger: 0.25, delay: 1.5 });
 tl.to(".splash", { y: "-100%", duration: 1, delay: 1.5  }, "-=1");
 tl.to(".slider", { y: "-100%", duration: 1, delay:-1});
 tl.from("#hey", {x: -200, duration: 1, opacity: 0}, "-=0.4")
