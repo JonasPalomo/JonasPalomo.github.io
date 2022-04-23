@@ -18,6 +18,24 @@
   });
 })(window, document);
 
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+tl.to(".text", { y: "0%", duration: 1, stagger: 0.25, delay: 1.5 });
+tl.to(".splash", { y: "-120%", duration: 1, delay: 1.5  }, "-=1");
+tl.to(".slider", { y: "-120%", duration: 1, delay:-1});
+tl.from("#hey", {x: -200, duration: 1, opacity: 0}, "-=0.4")
+tl.from("#name", {x: -200, duration: 1, opacity: 0}, "-=.08")
+tl.fromTo("#about-button", { opacity: 0 }, { opacity: 1, duration: 0.5 });
+tl.fromTo("header", { opacity: 0 }, { opacity: 1, duration: 0.5 }, "-=1");
+
+ScrollReveal({
+  reset:false,
+  distance: '50px',
+})
+
+ScrollReveal().reveal('#portfolio-title', {delay: 100, origin: 'top'})
+ScrollReveal().reveal('.portfolio-content', {delay: 100, origin: 'left'})
+ScrollReveal().reveal('.content-info', {delay: 100, origin: 'right'})
 
 let navbar = document.querySelector('.header');
 window.onscroll = () => {
@@ -26,40 +44,28 @@ window.onscroll = () => {
   } else {
       navbar.classList.remove('nav-active');
   }
-};
-
-function disableScroll() {
-  // Get the current page scroll position
-  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-
-      // if any scroll is attempted, set this to the previous value
-      window.onscroll = function() {
-          window.scrollTo(scrollLeft, scrollTop);
-      };
 }
 
-function enableScroll() {
-  window.onscroll = function() {};
-}
+// function disableScroll() {
+//   // Get the current page scroll position
+//   scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//   scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
 
-const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+//       // if any scroll is attempted, set this to the previous value
+//       window.onscroll = function() {
+//           window.scrollTo(scrollLeft, scrollTop);
+//       };
+// }
 
-tl.to(".text", { y: "0%", duration: 1, stagger: 0.25, delay: 1.5 });
-tl.to(".splash", { y: "-100%", duration: 1, delay: 1.5  }, "-=1");
-tl.to(".slider", { y: "-100%", duration: 1, delay:-1});
-tl.from("#hey", {x: -200, duration: 1, opacity: 0}, "-=0.4")
-tl.from("#name", {x: -200, duration: 1, opacity: 0}, "-=.08")
-tl.fromTo("#about-button", { opacity: 0 }, { opacity: 1, duration: 0.5 });
-tl.fromTo("header", { opacity: 0 }, { opacity: 1, duration: 0.5 });
+// function enableScroll() {
+//   window.onscroll = function() {};
+// }
 
-ScrollReveal({
-  reset:false,
-  distance: '60px',
-  // duration:2500,
-  // delay: 400
-})
+// window.addEventListener('DOMContentLoaded', () => {
 
-ScrollReveal().reveal('#portfolio-title', {delay: 100, origin: 'top'})
-ScrollReveal().reveal('.portfolio-content', {delay: 100, origin: 'left'})
-ScrollReveal().reveal('.content-info', {delay: 100, origin: 'right'})
+//   disableScroll();
+
+//   setTimeout(() => {
+//       enableScroll();
+//   }, 6500)
+// })

@@ -30,141 +30,148 @@
 		<header class="header">
 			<nav class="nav-bar">
 				<a href="#home-page" class="nav-text">Home</a>
+				<!-- <a href="#intro" class="nav-text">Who I am</a> -->
 				<a href="#portfolio" class="nav-text">My Works</a>
 				<a href="#footer" class="nav-text">Contact Me</a>
 			</nav>
 		</header>
 	
 		<div class="home-page" id="home-page">
-			<div class="home-text">
-				<p id="hey">Hey, I'm</p>
-				<p id="name">Jonas</p>
-				<p id="name">Palomo</p>
-				<a href="about.html" id="about-button">Learn more about me</a>
+			<div class="home-text-elements">
+				<p class="home-text" id="hey">Hey, I'm</p>
+				<div class="home-text">
+					<p id="name">Jonas</p>
+					<p id="name">Palomo</p>
+				</div>
+				<a href="about.html" class="home-text" id="about-button">Learn more about me</a>
 			</div>
 		</div>
 	</div>
-	<div id="intro">
-		<p class="intro-title">My Introduction</p>
-		<p class="intro-text">Hello! My name is Jonas Palomo and I am currently majoring in <mark>BSMS Computer Science
-			with Specialization in Data Science & Analytics</mark> at Ateneo de Manila University. Thank you for taking a look
-			on my personal website. I am currently <mark>seeking for an internship</mark> that is in line with my interests, 
-			such as <mark>a role in data science, web development, software development, or software engineering</mark>. 
-			This website serves as my official portfolio to showcase my past projects in order to present a measure of 
-			my skills and capabilities.<br>I hope that you gain insights on what I am able to do!
-		</p>
-		<a href="JonasPalomo-Resume.pdf" id="download-resume" target="_blank" download>Download Resume</a>
-		<h1 style="margin-top: 70px; font-size: 60px;">Check out my works below!</h1>
+	<div class="intro-container">
+		<div id="intro">
+			<p class="intro-title">My Introduction</p>
+			<p class="intro-text">Hello! My name is Jonas Palomo and I am currently majoring in <mark>BSMS Computer Science
+				with Specialization in Data Science & Analytics</mark> at Ateneo de Manila University. Thank you for taking a look
+				on my personal website. I am currently <mark>seeking for an internship</mark> that is in line with my interests, 
+				such as <mark>a role in data science, web development, software development, or software engineering</mark>. 
+				This website serves as my official portfolio to showcase my past projects in order to present a measure of 
+				my skills and capabilities. I hope that you gain insights on what I am able to do!
+			</p>
+			<a href="JonasPalomo-Resume.pdf" id="download-resume" target="_blank" download>Download Resume</a>
+			<h1 class="intro-check">Check out my works below!</h1>
+		</div>
 	</div>
 
-	<div id="portfolio">
-		<h1 id="portfolio-title">My Works</h1>
-
-		<div class="portfolio-content" id="video-bujo">
-			<video id="video" width="800" preload="auto" controls>
-				<source src="img/bujo.mp4" type="video/mp4">
-			</video>
-		</div>
-		<div class="content-info" id="bujo-info">
-			<h1 class="title">Bullet Journal</h1>
-			<p><strong>Bullet Journal</strong> is a website that was <mark>developed using Python and Django framework</mark>. It utilizes
-			<mark>postgreSQL database</mark> in order to store relevant information needed for the website. The website allows users to customize their profiles, including: profile picture, nickname, and bio/description. Bujo is designed to be a personal journal where a user can schedule tasks or events in the weekly planner.</p>
-		</div>
-
-		<div class="portfolio-content" id="video-questboard">
-			<video width="800" preload="auto" controls muted>
-				<source src="img/Questboard.mp4" type="video/mp4">
-			</video>
-		</div>
-		<div class="content-info" id="questboard-info">
-			<h1 class="title">Questboard</h1>
-			<p><strong>Questboard</strong> is a website that was <mark>developed using Python and Django framework</mark>. It utilizes <mark>postgreSQL database</mark> in order to store relevant information needed for the website. It is 
-			designed to be a task distributor used by teachers in order to disseminate tasks to their 
-			students. A teacher can create a Questboardfor a specific topic in the course,
-			and assign the number of stars needed to get full marks on the Questboard.
-			The teacher can then post quests in the Questboard where students can participate
-			and earn stars for the questboard.</p>
-		</div>
-
-		<div id="m82-image" class="portfolio-content portfolio-image">
-			<img src="img/m82website.PNG">
-		</div>
-		<div class="content-info" id="m82-info">
-			<h1 class="title">Website proposal for gaming organization</h1>
-			<p>This is a website proposal for our non-official gaming organization. The organization is based on Facebook streaming for games that we love to play.</p>
-			<br>
-			<div class="portfolio-button">
-				<a href="m82/index.html" target=”_blank”>Check out the website</a>
+	<div id="portfolio-container">
+		<div id="portfolio">
+			<h1 id="portfolio-title">My Works</h1>
+	
+			<div class="portfolio-content" id="video-bujo">
+				<video id="video" preload="auto" controls muted>
+					<source src="img/bujo.mp4" type="video/mp4">
+				</video>
 			</div>
-		</div>
-		
-		<div id="data-story" class="portfolio-content portfolio-image">
-			<img src="img/data.jpg">
-		</div>
-		<div class="content-info" id="data-story-info">
-			<h1 class="title">COVID-19 Dashboard</h1>
-			<p><mark>Using Tableau Desktop and Tableau Prep</mark>, I
-				created a dashboard that explains the current
-				progress of world vaccination and COVID-19
-				updates of each country. Additionally, it includes interactive
-				graphs and charts that a user can adjust to see the numbers
-				change with respect to the month and year. <mark>The dataset contains hundreds of thousands of rows of data</mark>, which includes confirmed cases, recoveries and deaths.
-				The intended audience of this dashboard is directed towards the general health sector and governments of each country in order to give useful recommendations that are grounded on data
+			<div class="content-info" id="bujo-info">
+				<h1 class="title">Bullet Journal</h1>
+				<p><strong>Bullet Journal</strong> is a website that was <mark>developed using Python and Django framework</mark>. It utilizes
+				<mark>postgreSQL database</mark> in order to store relevant information needed for the website. The website allows users to customize their profiles, including: profile picture, nickname, and bio/description. Bujo is designed to be a personal journal where a user can schedule tasks or events in the weekly planner.</p>
+			</div>
+	
+			<div class="portfolio-content" id="video-questboard">
+				<video id="video" preload="auto" controls muted>
+					<source src="img/Questboard.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="content-info" id="questboard-info">
+				<h1 class="title">Questboard</h1>
+				<p><strong>Questboard</strong> is a website that was <mark>developed using Python and Django framework</mark>. It utilizes <mark>postgreSQL database</mark> in order to store relevant information needed for the website. It is 
+				designed to be a task distributor used by teachers in order to disseminate tasks to their 
+				students. A teacher can create a Questboardfor a specific topic in the course,
+				and assign the number of stars needed to get full marks on the Questboard.
+				The teacher can then post quests in the Questboard where students can participate
+				and earn stars for the questboard.</p>
+			</div>
+	
+			<div id="m82-image" class="portfolio-content portfolio-image">
+				<img class="image" src="img/m82website.PNG">
+			</div>
+			<div class="content-info" id="m82-info">
+				<h1 class="title">Website proposal for gaming organization</h1>
+				<p>This is a website proposal for our non-official gaming organization. The organization is based on Facebook streaming for games that we love to play.</p>
+				<br>
+				<div class="portfolio-button">
+					<a href="m82/index.html" target=”_blank”>Check out the website</a>
+				</div>
+			</div>
+			
+			<div id="data-story" class="portfolio-content portfolio-image">
+				<img class="image" src="img/data.jpg">
+			</div>
+			<div class="content-info" id="data-story-info">
+				<h1 class="title">COVID-19 Dashboard</h1>
+				<p><mark>Using Tableau Desktop and Tableau Prep</mark>, I
+					created a dashboard that explains the current
+					progress of world vaccination and COVID-19
+					updates of each country. Additionally, it includes interactive
+					graphs and charts that a user can adjust to see the numbers
+					change with respect to the month and year. <mark>The dataset contains hundreds of thousands of rows of data</mark>, which includes confirmed cases, recoveries and deaths.
+					The intended audience of this dashboard is directed towards the general health sector and governments of each country in order to give useful recommendations that are grounded on data
+					</p>
+			</div>
+	
+			<div id="Data Extraction and Cleaning" class="portfolio-content portfolio-image">
+				<img class="image" src="img/data-extract.PNG">
+			</div>
+			<div class="content-info" id="data-story-info">
+				<h1 class="title">Data Mining, Extraction, and Cleaning</h1>
+				<p>I extracted data from Twitter using <mark>Tweepy</mark> library and <mark>Twitter API</mark> in Python. After extracting thousands of tweets, 
+					I proceeded to perform numerous data cleaning techniques such as removing stopwords and punctuations,
+					applying lemmatization, removing hashtags and unnecesary spaces. This was pre-processing step before applying
+					NLP techniques in order to analyze the data.
 				</p>
-		</div>
-
-		<div id="Data Extraction and Cleaning" class="portfolio-content portfolio-image">
-			<img src="img/data-extract.PNG">
-		</div>
-		<div class="content-info" id="data-story-info">
-			<h1 class="title">Data Mining, Extraction, and Cleaning</h1>
-			<p>I extracted data from Twitter using <mark>Tweepy</mark> library and <mark>Twitter API</mark> in Python. After extracting thousands of tweets, 
-				I proceeded to perform numerous data cleaning techniques such as removing stopwords and punctuations,
-				applying lemmatization, removing hashtags and unnecesary spaces. This was pre-processing step before applying
-				NLP techniques in order to analyze the data.
-			</p>
-		</div>
-
-		<div id="nlp" class="portfolio-content portfolio-image">
-			<img src="img/NLP.PNG">
-		</div>
-		<div class="content-info" id="data-story-info">
-			<h1 class="title">Using NLP techniques on Philippine Political Twitter Discussions</h1>
-			<p>
-				Using tweets extracted from <mark>Twitter API</mark> that have been pre-processed, I analyzed the data using numerous
-				natural language processing techniques such as <mark>sentiment analysis</mark> and <mark>topic modelling</mark>.
-			</p>
-			<br>
-			<a href="leni_data.pdf" target="_blank">View the full notebook here.</a>
-		</div>
-		
-		<div class="portfolio-content" id="video-data-model">
-			<video width="800" preload="auto" controls muted>
-				<source src="img/data-model.mp4" type="video/mp4">
-			</video>
-		</div>
-		<div class="content-info" id="data-model-info">
-			<h1 class="title">Simulation of COVID-19 w/ Vaccine Rollout</h1>
-			<p>
-				I created this simulation modelled after the SIVR model using <mark>Python</mark>. I also used Python libraries such as
-				<mark>NumPy and pandas</mark> for data manipulation, <mark>Matplotlib</mark> for data visualization, and <mark>AgentPy framework</mark> to create the
-				data model and simulation itself. The model simulates the behavior of a population being infected by COVID-19
-				and the effect of a vaccine rollout after a specific time-step.
-			</p>
-		</div>
-
-		<div id="blue-mark" class="portfolio-content portfolio-image">
-			<img src="">
+			</div>
+	
+			<div id="nlp" class="portfolio-content portfolio-image">
+				<img class="image" src="img/NLP.PNG">
+			</div>
+			<div class="content-info" id="data-story-info">
+				<h1 class="title">Using NLP techniques on Philippine Political Twitter Discussions</h1>
+				<p>
+					Using tweets extracted from <mark>Twitter API</mark> that have been pre-processed, I analyzed the data using numerous
+					natural language processing techniques such as <mark>sentiment analysis</mark> and <mark>topic modelling</mark>.
+				</p>
+				<br>
+				<a href="leni_data.pdf" target="_blank">View the full notebook here.</a>
+			</div>
+			
+			<div class="portfolio-content" id="video-data-model">
+				<video id="video" preload="auto" controls muted>
+					<source src="img/data-model.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="content-info" id="data-model-info">
+				<h1 class="title">Simulation of COVID-19 w/ Vaccine Rollout</h1>
+				<p>
+					I created this simulation modelled after the SIVR model using <mark>Python</mark>. I also used Python libraries such as
+					<mark>NumPy and pandas</mark> for data manipulation, <mark>Matplotlib</mark> for data visualization, and <mark>AgentPy framework</mark> to create the
+					data model and simulation itself. The model simulates the behavior of a population being infected by COVID-19
+					and the effect of a vaccine rollout after a specific time-step.
+				</p>
+			</div>
+	
+			<!-- <div id="blue-mark" class="portfolio-content portfolio-image">
+				<img src="">
+			</div> -->
 		</div>
 	</div>
 
 	<div id="footer">
 		<div class="footer-content">
-			<div class="col">
-				<h1 class="developed-by">Designed and developed by <mark>Jonas Palomo</mark></h1>
+			<div class="col col-1">
+				<h1 class="developed-by">Designed and developed by <br><mark>Jonas Palomo</mark></h1>
 				<p>Thanks for stopping by and I hope to hear from you soon!</p>
 			</div>
-			<div class="col col-right">
+			<div class="col col-2">
 				<h1 class="reach-out">Reach out to me.</h1>
 				<h3>You can contact me through these platforms.</h3>
 				<ul class="socials">
@@ -172,14 +179,23 @@
 						<i class="uil uil-envelope"></i><p>jonas.palomo@obf.ateneo.edu</p>
 					</li>
 					<li>
-						<i class="uil uil-linkedin"></i><p>linkedin.com/in/jonaspalomo
-						</p>
+						<i class="uil uil-linkedin"></i><p>linkedin.com/in/jonaspalomo</p>
 					</li>
 					<li>
 						<i class="uil uil-phone"></i><p>0927 472 6791</p>
 					</li>
 				</ul>
 			</div>
+			<!-- <div class="col col-3">
+				<h1 class="explore">Explore</h1>
+				<ul class="nav-options-in-footer">
+					<li><p>Home</p></li>
+					<li><p>About me</p></li>
+					<li><p>Who I am</p></li>
+					<li><p>My Works</p></li>
+					<li><p>Contact Me</p></li>
+				</ul>
+			</div> -->
 		</div>
 	</div>
 	<script src="app.js"></script>
